@@ -8,4 +8,6 @@ show dbs
 db.users.insertOne({ name: "Alice" })
 db.users.intoOne({ name: "Alice" })
 db.users.intoOne ({ name: "Alice" })
-db.createCollection("us
+db.createCollection("users")
+use myapp
+use lyapp db.createCollection("users") 
