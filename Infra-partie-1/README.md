@@ -24,3 +24,23 @@ services:
 - show dbs
 - show collections
 - mongodb://root:example@localhost:27017/admin
+
+ATERLIER 2 - MISE EN PLACE D’UNE VM ET D’UN CONTENEUR
+
+- Installer VirtualBox
+- Nouvelle
+Nom : UbuntuServer
+Type : Linux
+Version : Ubuntu (64-bit)
+- Télécharger l'iso
+- Mettre le .iso dans la vm, stockage
+- suivre ce que la vm  te dit au lancement
+- sudo apt install -y docker.io
+- sudo systemctl enable --now docker
+- sudo systemctl status docker
+- sudo docker run -d -p 80:80 --name webserver nginx:latest
+- sudo docker ps
+- curl localhost
+- sudo shutdown now
+- sudo docker rm -f webserver
+- sudo docker ps
